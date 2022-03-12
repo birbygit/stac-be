@@ -1,2 +1,3 @@
 #add virtual environment folder
 /venv01
+/__pycache__
