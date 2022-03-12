@@ -8,7 +8,16 @@ from sqlalchemy.orm import relationship
 class Client(Base):
     __tablename__ = "clients"
     id = Column(Integer, primary_key=True, nullable=False)
-    
+    name = Column(String, nullable=False)
+    address = Column(String, nullable=False)
+    zip_code = Column(String, nullable=False)
+    country = Column(String, nullable=False)
+    created_at = Column(TIMESTAMP(timezone=TRUE), server_default=text('now()'), nullable=False)
+    updated_at = Column(TIMESTAMP(timezone=TRUE), server_default=text('now()'), nullable=False)
+    website_url = Column(String, nullable=True)
+    global_mail = Column(String, nullable=True)
+    phone_number = Column(String, nullable=True)
+    fax_number = Column(String, nullable=True)
 
 class Ticket(Base):
     __tablename__ = "tickets"
