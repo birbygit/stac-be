@@ -1,5 +1,5 @@
-# webstac
-FastAPI /Python project for ticketing management
+# stac-be
+FastAPI /Python project for ticketing management (backend)
 # Goals
 - develop internal tool for clients support
 - learn Python / backend development
